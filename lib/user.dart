@@ -8,7 +8,7 @@ import 'package:movie_app/userlogin.dart';
 
 class UserService {
   Future registerUser(data) async {
-    var uri = Uri.parse(url.BaseUrl + "/register_admin");
+    var uri = Uri.parse(url.BaseUrl + "/register_user");
     var register = await http.post(uri, body: data);
 
 
@@ -36,7 +36,7 @@ class UserService {
     }
   }
   Future loginUser(data) async {
-    var uri = Uri.parse(url.BaseUrl + "/login");
+    var uri = Uri.parse(url.BaseUrl + "/auth/login");
     var register = await http.post(uri, body: data);
 
 

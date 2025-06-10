@@ -19,6 +19,6 @@ class MovieModel {
     title = parsedJson["title"];
     voteAverage = double.parse(parsedJson["voteaverage"].toString());
     overview = parsedJson["overview"];
-    posterPath = "${url.BaseUrl}/${parsedJson["posterpath"]}";
+    posterPath = "${url.BaseUrlMovie}/${parsedJson["posterpath"]}";
   }
 }
